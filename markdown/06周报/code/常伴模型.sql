@@ -3,6 +3,9 @@
     create table temp_two_hzcompare as
     select * from dwfu_hive_db.I_TPOS_TRAIL_GRID_D where p_day = '20220704'  and bill_no in ('19558107600', '13819145656')
 
+    select * from dwfu_hive_db.I_TPOS_TRAIL_GRID_D
+    where "20220701" <= p_day and p_day <= "20220710" and bill_no in ('19558107600', '13819145656')
+
     -- // TODO two days
     create table temp_two_hzcompare_two as
     select * from dwfu_hive_db.I_TPOS_TRAIL_GRID_D where p_day in ('20220707', '20220708') and bill_no in ('19558107600', '13819145656')
