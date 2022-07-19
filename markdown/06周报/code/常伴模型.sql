@@ -20,7 +20,7 @@
     from temp_two_hzcompare a
     join dwfu_hive_db.I_CDM_SEC_MR_RELA b
     on a.gri_id = b.id
-d
+
     -- // TODO two days
     create table temp_two_hzcompare_sec_two as
     select b.SEC_MR_CENT_ID, a.*
@@ -200,3 +200,25 @@ d
         )
         order by a_bill_no, a_in_time
 
+
+----- 导入杭州市数据用于分析
+create table hangzhou (
+    年份 varchar(10),
+    月份 varchar(10),
+    地市 varchar(10),
+    区县 varchar(10),
+    总人口数 int,
+    常住人口数 int,
+    常住人均驻留天数 decimal(10, 2),
+    流动人口数 int,
+)
+
+SELECT 月份, SUM(Age_0_17) Age_0_17, SUM(Age_18_29) Age_18_29, SUM(Age_30_39) Age_30_39, SUM(Age_40_49) Age_40_49, SUM(Age_50_59) Age_50_59, SUM(Age_60_69) Age_60_69, SUM(Age_70以上) Age_70以上 FROM 杭州市
+GROUP BY 月份
+
+select sum(Age_0_17) / 12 Age_0_17, sum(Age_18_29) / 12 Age_18_29, sum(Age_30_39) / 12 Age_30_39, sum(Age_40_49) / 12 Age_40_49, sum(Age_50_59) / 12 Age_50_59, sum(Age_60_69) / 12 Age_60_69, sum(Age_70以上) / 12 Age_70以上
+from (
+    SELECT 月份, SUM(Age_0_17) Age_0_17, SUM(Age_18_29) Age_18_29, SUM(Age_30_39) Age_30_39, SUM(Age_40_49) Age_40_49, SUM(Age_50_59) Age_50_59, SUM(Age_60_69) Age_60_69, SUM(Age_70以上) Age_70以上 FROM 杭州市
+    WHERE 年份 = 2021
+    GROUP BY 月份
+)

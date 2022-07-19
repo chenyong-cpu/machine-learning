@@ -91,5 +91,20 @@ join (
 	) t2
 on t1.bill_no = t2.bill_no
 
--- 日报
-获取2022年05月潜在购车模型中使用吉利公司相关APP的用户22000人；而常驻5月的人口中使用吉利公司相关APP的用户207346人；潜在购车模型只能做为有车用户中的一个打分项
+---- 又是水的一天 ----
+
+-- 杭州市202101-202205人口变化图
+SELECT 月份, SUM(总人口数) 总人口数, SUM(常住人口数) 常住人口数, SUM(流动人口数) 流动人口数 FROM 杭州市
+GROUP BY 月份
+
+-- 杭州市202101-202205年龄段人口变化图
+SELECT 月份, SUM(Age_0_17) Age_0_17, SUM(Age_18_29) Age_18_29, SUM(Age_30_39) Age_30_39, SUM(Age_40_49) Age_40_49, SUM(Age_50_59) Age_50_59, SUM(Age_60_69) Age_60_69, SUM(Age_70以上) Age_70以上 FROM 杭州市
+GROUP BY 月份
+
+-- 2021年杭州市各年龄段人口平均占比
+select sum(a.Age_0_17) / 12 Age_0_17, sum(a.Age_18_29) / 12 Age_18_29, sum(a.Age_30_39) / 12 Age_30_39, sum(a.Age_40_49) / 12 Age_40_49, sum(a.Age_50_59) / 12 Age_50_59, sum(a.Age_60_69) / 12 Age_60_69, sum(a.Age_70以上) / 12 Age_70以上
+from (
+    SELECT 月份, SUM(Age_0_17) Age_0_17, SUM(Age_18_29) Age_18_29, SUM(Age_30_39) Age_30_39, SUM(Age_40_49) Age_40_49, SUM(Age_50_59) Age_50_59, SUM(Age_60_69) Age_60_69, SUM(Age_70以上) Age_70以上 FROM 杭州市
+    WHERE 年份 = 2021
+    GROUP BY 月份
+) a
