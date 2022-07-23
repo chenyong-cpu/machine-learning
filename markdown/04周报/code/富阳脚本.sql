@@ -71,16 +71,16 @@ where home_county_name = '富阳区' and work_county_name != '富阳区'
 group by age_level,sex_desc,months;
 
 -- 1.2.2
-create table temp_fyuser_count_250_6_20_1_4 as
+create table temp_fyuser_count_250_6_20_1_4_type as
 select SEC_MR_CENT_ID, SEC_MR_LNG_CENT, SEC_MR_LAT_CENT, count(distinct bill_no) cnt,months 
 from temp_fyuser_count_250_6_20
-where home_county_name = '富阳区' and work_county_name = '富阳区'
+where home_county_name = '富阳区' and work_county_name = '富阳区' and cert_type = 1
 group by SEC_MR_CENT_ID, SEC_MR_LNG_CENT, SEC_MR_LAT_CENT, months
 order by cnt desc;
 
 select age_level,sex_desc,count(distinct bill_no) cnt,months 
 from temp_fyuser_count_250_6_20 
-where home_county_name = '富阳区' and work_county_name = '富阳区'
+where home_county_name = '富阳区' and work_county_name = '富阳区' and cert_type = 1
 group by age_level,sex_desc,months;
 
 -- 1.2.3
