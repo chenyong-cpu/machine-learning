@@ -1,0 +1,7 @@
+姓名：杨子超  账号：yangzichao    密码： ict-yangzichao-gt5s 
+姓名：饶  泓  账号：raohong       密码： ict-raohong-gt5s 
+姓名：夏宸星  账号：xiachenxing   密码： ict-xiachenxing-gt5s
+
+http://192.168.1.202:8888/
+
+安装好好可访问这个jupyter链接，密码是123456

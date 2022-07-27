@@ -1,0 +1,2 @@
+var Bitauto = Bitauto || {};
+ Bitauto.location = {"address":"浙江省杭州市","city":{"id":"3001","name":"杭州市","regionId":"330100","regionName":"杭州市","shortName":"杭州","spell":"hangzhou"},"cityId":"3001","defaultType":0,"directlyType":0,"ip":"115.195.39.87","name":"杭州市","province":{"id":"30","name":"浙江省","regionId":"330000","regionName":"浙江省","shortName":"浙","spell":"zhejiang"},"regionId":"330100","shortName":"杭州"};
