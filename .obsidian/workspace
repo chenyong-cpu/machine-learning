@@ -1,0 +1,133 @@
+{
+  "main": {
+    "id": "bdcf68acc79f9040",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e53f191288924c7",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "markdown/09周报/README.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7a6ab8098aec5672",
+    "type": "split",
+    "children": [
+      {
+        "id": "49e09d6a591835b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "355d3f585d3f52fe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "3ac920cd14f67867",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e4d486804b7a8ee3",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8f8c15e9857990d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "2bfccedbe3abbd87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "28e2dbed9dd12c94",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "markdown/09周报/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3d9247387c3f1f5b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "markdown/09周报/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f70dc9f497fd1fa6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fb06c4c3d68d4402",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "markdown/09周报/README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6e53f191288924c7",
+  "lastOpenFiles": []
+}

@@ -1,0 +1,13 @@
+1. Pandas读取CSV文件
+2. Pandas创建一个新的Array并且添加十三级地址和remark
+3. 除了省市县乡的其他七级地址处理
+    1. 英文括号转换为中文括号
+    2. 将括号和括号中的内容放到remark中
+    3. 将Block、Village、Building中的中文数字转换为阿拉伯数字
+    4. 对Block、Village、Bulding、Unit、Floor中的楼层等进行统一单位
+    5. 对Road进行拆分回填
+    6. 对village进行拆分回填
+    7. 对Block进行拆分回填
+    6. 对Build进行拆分回填
+    7. 对Floor进行拆分回填
+4. 写入到文件
