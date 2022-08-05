@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "markdown/10周报/README.md",
+            "file": "markdown/自然语言处理/NLP.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8f8c15e9857990d0",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "markdown/10周报/README.md",
+                "file": "markdown/自然语言处理/NLP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "markdown/10周报/README.md",
+                "file": "markdown/自然语言处理/NLP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "markdown/10周报/README.md"
+                "file": "markdown/自然语言处理/NLP.md"
               }
             }
           }
@@ -130,6 +131,8 @@
   },
   "active": "6e53f191288924c7",
   "lastOpenFiles": [
+    "markdown/自然语言处理/README.md",
+    "markdown/10周报/README.md",
     "markdown/09周报/README.md"
   ]
 }
