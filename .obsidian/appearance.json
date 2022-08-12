@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 {
   "theme": "moonstone",
   "cssTheme": "Minimal",
   "interfaceFontFamily": "Consolas"
+=======
+{
+  "theme": "moonstone"
+>>>>>>> work
 }
