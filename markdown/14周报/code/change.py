@@ -1,0 +1,28 @@
+
+        print('proces '+filename[:-6])
+        kdfg_dz_df0 = pd.read_csv(path+filename,low_memory=False)
+        if list(kdfg_dz_df0.columns) != columns:
+            kdfg_dz_df0.columns = columns
+        kdfg_dz_df = kdfg_dz_df0.reindex(columns=lishui_new_columns)
+#         print(kdfg_dz_df.shape[0])
+        kdfg_dz_df2 = main_process(kdfg_dz_df, 26, path+filename, lishui_new_columns[:26])
+#         print(kdfg_dz_df2.shape[0])
+        kdfg_dz_df2.pop('grade_61')
+        kdfg_dz_df2.pop('grade_62')
+        kdfg_dz_df2.pop('longitude')
+        kdfg_dz_df2.pop('latitude')
+        df1 = merge_same_address(kdfg_dz_df2)
+#         print(df1.shape[0])
+        df2 = pd.DataFrame.copy(df1, deep=True)
+        df2 = set_code(df2, output_dict)
+        df1['all_code'] = df2['all_code']
+        df1.drop(columns=['idx','hb_cnt','merge_address'], inplace=True)
+#         print(df1.shape[0])
+        df1.to_csv(path+'8_15/1/V1_3_'+filename, encoding='utf-8',index=False)
+        df2.drop_duplicates('idx', inplace=True)
+        df2.drop(columns=['idx'],inplace=True)
+        col = df2.pop('hb_cnt')
+        df2.insert(len(df2.columns), col.name, col)
+#         print(df2.shape[0])
+        df2.to_csv(path+'8_15/2/V1_3_'+filename, encoding='utf-8',index=False)
+        print(filename[:-6]+' done')
